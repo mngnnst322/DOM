@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen {
+  width: 390px !important;
+  height: 750px;
+}
+.phone {
+  height: 800px;
+  width: 390px;
+  border-radius: 36px;
+  /* border: 4px sold rgb(56, 56, 56); */
+  display: flex;
+  flex-direction: column;
+  background-image: url(./iphone-sansar.webp);
+  background-size: cover;
+  align-items: center;
+  justify-content: end;
+}
+.calculater {
+  width: 100px;
+  height: 100px;
+}
+.stopwatch {
+  width: 100px;
+  height: 100px;
+}
+.icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 99999px;
+}
+.apps {
+  display: flex;
+  gap: 6px;
+}

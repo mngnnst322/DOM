@@ -1,0 +1,38 @@
+body {
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(199, 87, 102, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial;
+}
+.back {
+  background-color: #3f2b63;
+  height: 300px;
+  text-align: center;
+  width: 600px;
+  border-radius: 15px;
+  color: white;
+  padding-top: 100px;
+}
+p {
+  margin-bottom: 20px;
+}
+.watch {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+.buttons button {
+  border: none;
+  padding: 10px 35px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 16px;
+  background: white;
+}

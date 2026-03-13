@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(90deg, #85f2bc 0%, #8edae7 100%);
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cal {
+  justify-content: center;
+  align-items: center;
+}
+.input {
+  width: 400px;
+  height: 30px;
+}
+
+.name {
+  font-size: 80px;
+  height: 80px;
+  font-family: Inter;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 300px;
+}
+.container {
+  background-color: rgb(0, 128, 113);
+  padding: 20px;
+  width: 450px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  border: 17px solid white;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-right: 20px;
+}
+.input-sec {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  border-radius: 10px;
+}
+input {
+  outline: none;
+  border: none;
+}
+.button {
+  display: grid;
+  align-items: center;
+
+  gap: 20px;
+  grid-template-columns: repeat(4, 90px);
+}
+button {
+  height: 50px;
+  width: 90px;
+  border-radius: 10px;
+}
+.bill {
+  gap: 50px;
+}
+.reset {
+  font-size: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
