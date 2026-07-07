@@ -8,13 +8,13 @@ const sanitizeBillInput = (input) => {
   input = input.replace(/[^\d.]/g, "");
 
   //     zuvhun butarhai avna
-  if ((input.match(/\./g) || []).lenght > 1) {
+  if ((input.match(/\./g) || []).length > 1) {
     input = input.slice(0, -1);
   }
   return input;
 };
 
-billinput.addEventListener("click", () => {
+billinput.addEventListener("input", () => {
   billinput.value = sanitizeBillInput(billinput.value);
 });
 
@@ -24,14 +24,13 @@ tips.addEventListener("click", (event) => {
   } else if (billinput.value.length === 0) {
     alert("Bill input is empty");
   } else {
-    dollar.value =
-      (billinput.value * event.target.textContent.replace("%", "")) / 100;
-    let num = parseFloat(dollar.value);
-    let num1 = parseFloat(billinput.value);
-    dollar.innerHTML = `Amount: ${num + num1}$`;
+    const bill = parseFloat(billinput.value);
+    const tipPercent = parseFloat(event.target.textContent.replace("%", ""));
+    const total = bill + (bill * tipPercent) / 100;
+    dollar.innerHTML = `Amount: ${total.toFixed(2)}$`;
   }
 });
 reset.addEventListener("click", () => {
-  dollar.innerText = "Amount : 000";
+  dollar.innerText = "Amount: 0.00";
   billinput.value = "";
 });

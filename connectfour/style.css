@@ -9,32 +9,61 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
   font-family: Arial;
 }
 .back {
   background-color: #3f2b63;
-  height: 300px;
   text-align: center;
-  width: 600px;
   border-radius: 15px;
   color: white;
-  padding-top: 100px;
+  padding: 30px 40px;
 }
-p {
+.title p {
+  font-size: 30px;
+  margin: 0 0 10px 0;
+}
+.status {
+  font-size: 22px;
+  margin-bottom: 18px;
+  height: 26px;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 56px);
+  grid-template-rows: repeat(6, 56px);
+  gap: 6px;
+  background: #1e63a8;
+  padding: 10px;
+  border-radius: 12px;
   margin-bottom: 20px;
 }
-.watch {
-  font-size: 80px;
-  margin-bottom: 20px;
+.cell {
+  width: 56px;
+  height: 56px;
+  background: #e9eef5;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.15s;
 }
-.buttons button {
+.cell.red {
+  background: #e2434b;
+}
+.cell.yellow {
+  background: #f4c531;
+}
+.cell.win {
+  box-shadow: 0 0 0 4px white inset;
+}
+.reset {
   border: none;
-  padding: 10px 35px;
-  margin: 5px;
+  padding: 12px 40px;
   border-radius: 20px;
   font-size: 16px;
   background: white;
+  color: #3f2b63;
+  cursor: pointer;
 }
 .home-btn {
   position: absolute;

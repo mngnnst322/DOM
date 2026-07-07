@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X / O Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="home-btn" href="../index.html" title="Home">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="5" y="2" width="14" height="20" rx="3" />
+        <line x1="10" y1="18.5" x2="14" y2="18.5" />
+      </svg>
+    </a>
+    <div class="back">
+      <div class="title">
+        <p>Tic Tac Toe</p>
+      </div>
+      <div id="status" class="status">Player X's turn</div>
+      <div id="board" class="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+      <button id="resetbtn" class="reset">Reset</button>
+    </div>
+    <script src="./java.js"></script>
+  </body>
+</html>

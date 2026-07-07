@@ -1,43 +1,33 @@
 body {
   background: linear-gradient(90deg, #85f2bc 0%, #8edae7 100%);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter, Arial, sans-serif;
 }
 .bodyaaa {
-  margin: 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
-.cal {
-  justify-content: center;
-  align-items: center;
-}
-.input {
-  width: 400px;
-  height: 30px;
-}
-
 .name {
-  font-size: 80px;
-  height: 80px;
+  font-size: 50px;
   font-family: Inter;
-  align-items: center;
-  justify-content: center;
   color: white;
-  padding-top: 300px;
+  margin-bottom: 20px;
 }
 .container {
   background-color: rgb(0, 128, 113);
-  padding: 20px;
-  width: 450px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px;
-  border: 17px solid white;
+  padding: 25px;
+  width: 400px;
+  border: 12px solid white;
   border-radius: 15px;
-  overflow: hidden;
-  padding-right: 20px;
+}
+.bill p {
+  color: white;
+  margin: 10px 0;
 }
 .input-sec {
   background-color: white;
@@ -46,37 +36,65 @@ body {
   padding-left: 8px;
   border-radius: 10px;
 }
+.input {
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+}
 input {
   outline: none;
   border: none;
 }
 .button {
   display: grid;
-  align-items: center;
-
-  gap: 20px;
-  grid-template-columns: repeat(4, 90px);
+  gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 15px;
 }
 button {
-  height: 50px;
-  width: 90px;
+  height: 45px;
+  border: none;
   border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
 }
-.bill {
-  gap: 50px;
+button:hover {
+  background: #cfeee7;
+}
+#dollar {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 .reset {
-  font-size: 20px;
+  font-size: 18px;
   background-color: white;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 45px;
+  cursor: pointer;
 }
-.svg {
-  justify-self: start;
-
-  width: 50px;
-  height: 50px;
+.reset:hover {
+  background: #cfeee7;
+}
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 46px;
+  height: 46px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+.home-btn:hover {
+  background: white;
+}
+.home-btn svg {
+  stroke: #3f2b63;
 }

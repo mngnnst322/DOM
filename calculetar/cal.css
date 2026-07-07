@@ -5,6 +5,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #7b4397 0%, #dc2430 100%);
 }
 .phone {
   height: 700px;
@@ -70,12 +72,22 @@ body {
   opacity: 0.5;
   border-radius: 100%;
 }
-.svg {
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  border-radius: 99999px;
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 46px;
+  height: 46px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+.home-btn:hover {
+  background: white;
+}
+.home-btn svg {
+  stroke: #3f2b63;
 }
